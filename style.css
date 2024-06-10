@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+}
+/*                  Index                                           */
+
+.centre {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    content: "";
+    background-image: url('vue.jpg');
+    background-size: cover;
+    height: 1000px;
+    opacity: 0.9;
+    margin-top: 0;
+}
+.pres {
+    margin-top: 0;
+}
+
+/* ******************Pour le menu de navigation******************** */
+
+ul.menu {
+    font-family: Arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6640FF;
+    font-weight: bold;
+}
+
+ul.menu li {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: all ease-in 200ms;
+}
+
+ul.menu li a:hover {
+    background-color: #C0B1FF;
+    border-radius: 20px;
+    color: #382685;
+    font-weight: bold;
+}
+
+ul.menu li.right {
+    float: right;
+    padding-right: 5%;
+}
+
+ul.menu li.right a {
+    color: orange;
+    border:  2px solid orange;
+    border-radius: 20px;
+}
+
+ul.menu li.right a:hover {
+    background-color:#382685 ;
+}
+
+
+/* ****************style de la page chambre******************* */ 
+.chambre
+{
+    width:70%;
+    margin:auto;
+    margin-bottom: 3em;
+}
+
+.chambre h3
+{
+    box-shadow: inset 5px 10px 15px #6640FF; 
+    padding: 7px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size:22px;
+    margin-bottom:0;
+    border-radius: 5px 5px 0  0;
+}
+
+.theme, .prix
+{
+    float: right;
+    margin-right: 5%;
+}
+
+.chambre p
+{
+    padding: 20px;
+    padding-bottom: 15px;
+    box-shadow: 5px 10px 15px #6640FF;
+    background-color: #EEE ;
+    margin-top:0;
+}
+
+.chambre h3 a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.chambre h3 a:hover
+{
+    color: orange;
+}
+
+.chambre p a
+{
+    font-weight: bold; /* pour mettre en gras */
+    text-decoration: none;
+    color: #382685;
+}
+
+#commentaire p
+{
+    color: black;
+}
+
+.pagination
+{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a
+{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 50px;
+    text-decoration: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 4px silver; 
+}
+
+#PageCourante
+{
+    color: #6640FF;
+    pointer-events: none; /* désactive le liens (devient incliquable) */
+    background: silver;
+    opacity: 0.5;
+}
+
+.pagination a:hover
+{
+    color: blue;
+}
+
+.recherche
+{
+    font-size: 20px;
+    padding: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.bouton {
+    text-decoration: none;
+    background-color: #C0B1FF;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    transition: all ease-in 200ms;
+    border:  2px solid orange;
+}
+
+.bouton:hover {
+    border-radius: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.photo_chambre {
+    width: 100%;
+    height: auto; /* je sais il aurait fallut mettre un height auto ou width auto pour ne pas déformer l'image mais le "wide" c'est fait exprès */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* ******************Pour la page d'inscription / connexion********************* */
+
+.box-co { /*tout*/
+    display: block;
+    text-align: center;
+    border: 4px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(14, 38, 193);
+    background-color: rgb(248, 233, 236);
+    width: 500px;
+    height: 500px;
+    bottom: 25px;
+    justify-content: space-around;
+    padding: auto;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 10px 70px rebeccapurple;
+    
+
+}
+.btnco{
+     border: 1px solid grey;
+     border-radius: 12.5px;
+     width:75%;
+     left: 20px;
+     right: 20px;
+     height: 30px;
+     font-size: 20px;
+ }
+.btnco:nth-child(odd){
+    margin-top: 50px;
+}
+#icon {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 20px
+  }
+.label{
+    display: block;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+.btnbelec{
+    background: white;
+    border: 1px solid black;
+    margin-top:70px;
+    margin-bottom: 10px ;
+    width: 100px;
+    position: center;
+}
+.form{
+    padding: 5px 100px;
+    text-align: left;
+}
+.nd-from{
+    text-align: left;
+    padding-left:65px;
+    padding-top: 20px;
+    
+  }
+
+/* ******************Pour le responsive design********************* */
+
+@media screen and (max-width: 900px) {
+  
+    ul.menu li a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .chambre
+    {
+        width:80%;    
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+    ul.menu li.right, ul.menu li {
+        float: none;
+        padding-right: 0;
+        padding: 2px 0;
+    }
+
+    ul.menu li a:hover {
+        border-radius: 0;
+    }
+
+    ul.menu li a {
+        padding: 0px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .chambre
+    {
+        width:95%;    
+    }
+}

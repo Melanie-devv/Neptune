@@ -1,0 +1,514 @@
+:root {
+	--color-fullbars--: linear-gradient(to right, #da4453, #89216b);
+	--color-btn--: #f1c40f;
+	--font-menu--: 'Racing Sans One', cursive;
+	--font-titulos--: 'Parisienne', cursive;
+	--font-text--: 'Sofia', cursive;
+	--font-button--: 'Rock Salt', cursive;
+}
+	
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+ul.menu {
+    font-family: Arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6640FF;
+    font-weight: bold;
+}
+
+ul.menu li {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: all ease-in 200ms;
+}
+
+ul.menu li a:hover {
+    background-color: #C0B1FF;
+    border-radius: 20px;
+    color: #382685;
+    font-weight: bold;
+}
+
+ul.menu li.right {
+    float: right;
+    padding-right: 5%;
+}
+
+ul.menu li.right a {
+    color: orange;
+    border:  2px solid orange;
+    border-radius: 20px;
+}
+
+ul.menu li.right a:hover {
+    background-color:#382685 ;
+}
+
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: pink;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgb(219, 40, 70);
+	border-radius: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+li {
+	list-style-type: none;
+}
+.logo {
+	width: 20vw;
+}
+
+.logo img {
+	width: 110px;
+	height: 4.7em;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 10px;
+
+}
+input {
+	font-size: 15px;
+	justify-content: center;
+	padding: 3px;
+} 
+
+#submit {
+	font-family: var(--font-button--);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#sub-header {
+	font-family: 'Parisienne', cursive;
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 200px;
+	width: 90.8%;
+	margin: auto;
+	background-color: rgb(238, 227, 234, 0.80);
+}
+
+#sub-header input[type='submit'] {
+	max-width: 170px;
+	width: 100%;
+	border: 0;
+	padding: 5px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	
+}
+
+#sub-header #submit:hover {
+	color: azure;
+	border-radius: 8px;
+	border: 1px solid azure;
+}	
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	background-color: rgb(238, 227, 234, 0.80);
+}
+
+#Our-Service h2 {
+	font-family: 'Sofia', cursive;
+	font-style: italic;
+}
+
+#Our-Service p {
+	font-family: 'Sofia', cursive;
+	font-weight: normal;
+}
+
+#Our-Service {
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#Our-Service .grid {
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+#Our-Service .description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 125px;
+	width: 80vw;
+	padding: 5px;
+
+}
+
+#Making-a-Product {
+	margin-top: 80px;
+	padding-bottom: 3em;
+}
+.grid {
+	display: flex;
+}
+
+.icon {
+	font-size: 3em;
+}
+
+#Our-Service .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+	width: 20vw;
+	color: darkorange;
+}
+
+.title-products {
+	display: flex;
+	width: 100%;
+	height: 5.8em;
+	background-color: black;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+
+.title-products h3 {
+	color: #fff;
+	font-family: var(--font-titulos--);
+	font-size: 3.5em;
+}
+
+
+.pricing {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+	grid-auto-rows: 47rem;
+	grid-gap: 1rem;
+	padding: 1rem 2rem;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 2%;
+	background-color: rgb(238, 227, 234, 0.80);
+
+}
+
+.product:hover {
+	transform: scale(1.03);
+	transition: all 900ms;
+}
+
+.product .btn:hover, form .btn:hover {
+	background-color: var(--color-back-btn--);
+	cursor: pointer;
+	color: azure;
+	transform: scale(1.08);
+	transition: all 600ms;
+	border-radius: 8px;
+}
+
+.product .image {
+	width: 90%;
+	height: 300px;
+	object-fit: cover;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product h3 {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 6px;
+}
+
+.product h4 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.product ul li {
+	font-size: 15px;
+	padding: 4px;
+}
+
+.product .btn {
+	min-width: 2.5rem;
+	font-size: 0.9rem;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 5px 20px;
+	border: 0;
+	border-radius: 3px;
+	background-color: var(--color-btn--);
+}
+
+#Contact-Us {
+	background-image: url(/image/back1.jpg);
+	display: flex;
+	padding-top: 3em;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+form .btn{
+	min-width: 2rem;
+	padding: 4px;
+	border: 0;
+	background-color: var(--color-btn--);
+}
+form fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+
+}
+
+form fieldset textarea {
+	margin: 8px 40px ;
+	font-size: 15px;
+	padding: 5px;
+}
+
+input, label {
+	text-align: center;
+	margin: 2px;
+}
+
+label:last-of-type {
+	margin: 10px 0px;
+	font-size: 18px;
+}
+
+#Contact-Us label {
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+#Contact-Us form input {
+	width: 40%;
+}
+
+#Contact-Us form #age {
+	width: 12%;
+}
+
+#Social-Networks {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 12px;
+	padding-bottom: 5px;
+}
+
+#Social-Networks div i {
+	margin: 1px 12px;
+}
+
+#Social-Networks div i:hover {
+	transform: scale(1.2);
+	transition: all 600ms;
+	color: var(--color-back-btn--);
+}
+
+#Social-Networks #facebook {
+	color: white;
+}
+
+#Social-Networks #facebook:hover {
+	color: rgb(73, 73, 211);
+	transform: scale(1.2);
+	transition: all 600ms;
+}
+
+#Social-Networks #twitter:hover {
+	color: rgb(2, 238, 255);
+	transform: scale(1.2);
+	transition: all 600ms;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100% !important;
+}
+
+footer > ul > li > a {
+	text-decoration-color: none;
+	font-size: 12px;
+	font-family: 'Racing Sans One', cursive;
+}
+
+footer > ul > li > a:hover {
+	color: azure;
+}
+
+footer span {
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+	padding: 7px;
+}
+
+.parallax {
+	background: #fff fixed no-repeat 50% 50%;
+	background-size: cover;
+
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#image1 {
+	background-image: url(Hotel2.jpg);
+
+}
+
+#image2 {
+	background-image: url(Hotel3.jpg);
+}
+
+@media screen and (max-width: 1100px) {
+	.logo img {
+		width: 70px;
+		height: 50px;
+		transition: all 1s;
+	}
+
+}
+
+@media (max-width: 750px) {
+
+	#Our-Service .description {
+		font-size: 1rem;
+		transition: all 900ms;
+
+	}
+}
+
+@media screen and (max-width:550px) {
+
+	#header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#header .logo {
+		display: none;
+	}
+	#sub-header {
+		font-size: 1.3rem;
+	
+	}
+
+
+	#Making-a-Product{
+		display: flex;
+		justify-content: center;
+	}
+
+	#Making-a-Product iframe {
+		transform: scale(0.9);
+		transition: all 700ms;
+	}
+	
+	#Contact-Us fieldset input {
+		width: 80%;
+	
+	}
+
+	#Contact-Us textarea {
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width:375px) {
+
+	#header {
+		left: 0;
+	}
+
+	#Our-Service .description {
+		font-size: 12px;
+		transition: all 800ms;
+	}
+
+	#Contact-Us {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#Contact-Us fieldset input {
+		width: 220px;
+		transition: all 800ms;
+	}
+
+	#Contact-Us fieldset textarea {
+		width: 280px;
+		transition: all 800ms;
+	}
+
+}
